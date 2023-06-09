@@ -1,5 +1,5 @@
 class TwoSumSolution:
-    def two_sum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums, target):
         #  Naive solution
         # Looping through the whole array twice
         # Time complexity = O(n^2)
@@ -16,3 +16,10 @@ class TwoSumSolution:
                     index_j = nums.index(j)
                     return [index_i, index_j]
         return [-1, -1] 
+
+if __name__ == "__main__":
+    sol = TwoSumSolution;
+    list = [11, 15, 2, 7]
+    target = 9
+    print(sol.twoSum(sol, list, target))
+    #print(sol.twoSum_hashmap(sol, list, target))
