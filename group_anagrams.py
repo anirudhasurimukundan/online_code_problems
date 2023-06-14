@@ -1,3 +1,7 @@
+# Organize or group the strings that are anagrams into their respective sub list
+# Logic: Add the anagramatic strings into the same sub list using the character count tuple as the index in the hashmap
+# anagram_list = [(character count for each alphabet):anagramtic_strings as sublists]
+
 from collections import Counter,defaultdict
 
 class Solution:
