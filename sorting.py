@@ -1,4 +1,4 @@
-import numpy as np
+import random
 
 class Sort:
     def quickSort(self, arr):
@@ -42,6 +42,6 @@ class Sort:
 if __name__ == "__main__":
     sol = Sort;
     arr = [1, 4, 2, 8, 0, 3, 4, 4]
-    #arr = np.random.randint(0, 10, size=(1000), dtype=int)
+    #arr = random.randint(0, 10, size=(1000), dtype=int)
     #print("Sorted array using insertion sort = ", sol.insertionSort(sol, arr))
     print("Sorted array using quick sort = ", sol.quickSort(sol, arr))
