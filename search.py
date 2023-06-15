@@ -1,9 +1,5 @@
 import numpy as np
-"""
-for i in range(n):
-    min_index = np.argmin(x[i:]) + i
-    x[i], x[min_index] = x[min_index], x[i]
-"""
+
 class Search:
     def linearSearch(self, arr, lookup):
         """
