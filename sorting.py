@@ -9,5 +9,6 @@ class Sort:
 
 if __name__ == "__main__":
     sol = Sort;
-    arr = [1, 4, 2, 8, 0]
+    #arr = [1, 4, 2, 8, 0]
+    arr = np.random.randint(0, 10, size=(1000), dtype=int)
     print("Sorted array = ", sol.insertionSort(sol, arr))
