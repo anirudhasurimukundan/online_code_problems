@@ -2,6 +2,12 @@ import numpy as np
 
 class Sort:
     def insertionSort(self, arr):
+        """
+        Find the smallest element of the remaining chunk of the array
+        Swap the current element with the smallest element in the remainder chunk of the array
+        Time complexity: O(n^2)
+        Memory complexity: O(n)
+        """
         for i in range(len(arr)):
             min_index = np.argmin(arr[i:]) + i
             arr[i], arr[min_index] = arr[min_index], arr[i]
